@@ -10,8 +10,6 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.data.jpa.repository.Query;
-
 @Repository
 public interface ServicoRepository extends JpaRepository<Servico, Long> {
     
@@ -87,4 +85,3 @@ public interface ServicoRepository extends JpaRepository<Servico, Long> {
      */
     List<Servico> findByDuracaoMinutos(Integer duracaoMinutos);
 }
-
